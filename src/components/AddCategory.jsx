@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export function AddCategory({ onNewCategory }) {
-  const [inputValue, setInputValue] = useState("One Punch");
+  const [inputValue, setInputValue] = useState("");
 
   const onInputChange = ({ target }) => {
     setInputValue(target.value);
@@ -21,7 +21,7 @@ export function AddCategory({ onNewCategory }) {
     onNewCategory(inputValue)
   };
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} aria-label="form">
       <input
         type="text"
         placeholder="Search Gif"

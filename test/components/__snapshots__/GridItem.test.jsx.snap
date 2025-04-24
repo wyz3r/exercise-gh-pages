@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` testing component <GridItem /> should match with the snapshot 1`] = `
+<div>
+  <div
+    class="card"
+    data-testid="card"
+  >
+    <img
+      alt="una_imagen"
+      src="url_del_Gif"
+    />
+    <p>
+      una_imagen
+    </p>
+  </div>
+</div>
+`;
